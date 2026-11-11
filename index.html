@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MERSAN Mutfak · Mobilya Kataloğu</title>
+<link rel="stylesheet" href="assets/css/catalog.css?v=12">
+<script src="assets/js/vendor/page-flip.browser.js" defer></script>
+<script src="assets/js/products.js?v=2" defer></script>
+<script src="assets/js/catalog.js?v=9" defer></script>
+</head>
+<body>
+<main id="reader" aria-label="MERSAN dijital katalog">
+  <div id="viewport"><div id="book-shell"></div></div>
+  <nav aria-label="Katalog kontrolleri">
+    <button type="button" disabled id="prev" aria-label="Önceki sayfa">‹</button>
+    <output id="page-number" aria-live="polite"></output>
+    <button type="button" disabled id="next" aria-label="Sonraki sayfa">›</button>
+    <span class="divider"></span>
+    <button id="minus" aria-label="Uzaklaştır">−</button>
+    <button id="reset" aria-label="Yakınlaştırmayı sıfırla">100%</button>
+    <button id="plus" aria-label="Yakınlaştır">+</button>
+    <button id="fullscreen" aria-label="Tam ekran" aria-pressed="false">⛶</button>
+  </nav>
+</main>
+<template id="front">
+  <div class="cover">
+    <img class="brand" src="assets/images/logos/mersan.png" alt="MERSAN Mutfak">
+    <div class="cover-heading"><h1>Ürün Kataloğu</h1><p>2026</p></div>
+    <img class="cover-chair" src="assets/images/covers/front.jpg" alt="Açık renk döşemeli sandalye">
+  </div>
+</template>
+<template id="about">
+  <div class="editorial about">
+    <header><img src="assets/images/logos/mersan.png" alt="MERSAN Mutfak"></header>
+    <div class="editorial-body">
+      <h2>Mersan Hakkında</h2>
+      <p>Mersan Mutfak, profesyonel mutfaklara ve yeme içme işletmelerine yönelik ürünler sunar. Bu katalogda restoran, kafe ve oteller için sandalye, sedir ve masa seçeneklerini bir araya getirdik.</p>
+    </div>
+    <figure class="editorial-photo"><img src="assets/images/covers/about.jpg" alt="Ahşap gövdeli, yeşil döşemeli sandalye"></figure>
+    <footer><span class="footer-site">www.mersanmutfak.com</span></footer>
+  </div>
+</template>
+<template id="contact">
+  <div class="editorial contact">
+    <header><img src="assets/images/logos/mersan.png" alt="MERSAN Mutfak"></header>
+    <h2>İletişim</h2>
+    
+    <dl>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.2-4.4a8.5 8.5 0 1 1 16.3-4.1Z"/><path d="M8.5 8c-.9 2.2 2.7 5.8 5 6.4l1.2-1.2 1.8 1c.2 1.4-1.1 2.2-2.2 2-3.3-.6-6.7-3.9-7.3-7.2-.2-1.2.6-2.2 1.5-2.1Z"/></svg>WhatsApp</dt><dd><a href="https://wa.me/905076035844" target="_blank" rel="noopener">0507 603 58 44</a></dd></div>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.5" ry="8.5"/><path d="M3.5 12h17"/></svg>Web sitesi</dt><dd><a href="https://www.mersanmutfak.com" target="_blank" rel="noopener">www.mersanmutfak.com</a></dd></div>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.5"/><path d="M16.7 7.3h.1"/></svg>Instagram</dt><dd><a href="https://www.instagram.com/mersankitchen/" target="_blank" rel="noopener">@mersankitchen</a></dd></div>
+      <div><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3H14V8.5c0-1 .3-1.5 1.7-1.5H18V4.2A15 15 0 0 0 15.2 4C12.4 4 11 5.6 11 8.2V10H8v3h3v8"/></svg>Facebook</dt><dd><a href="https://www.facebook.com/mersanmutfak/" target="_blank" rel="noopener">mersanmutfak</a></dd></div>
+      <div class="address"><dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11s-7-6-7-11a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.4"/></svg>Adres</dt><dd>Maltepe, Fazıl Paşa Cd Fazıl Paşa Sanayi Sitesi No: 12/1, 34010 Zeytinburnu/İstanbul</dd></div>
+    </dl>
+    <figure class="contact-photo"><img src="assets/images/covers/contact.jpg" alt="Turkuaz döşemeli sedir"></figure>
+  </div>
+</template>
+<template id="back">
+  <div class="cover back-cover">
+    <img class="brand" src="assets/images/logos/mersan.png" alt="MERSAN Mutfak">
+    <figure class="back-cover-photo">
+      <img src="assets/images/covers/back.jpg?v=2" alt="Hasır sırtlı, yeşil döşemeli Lora sandalye">
+    </figure>
+    <div class="cover-heading"><h2>Ürün Kataloğu</h2><p>2026</p></div>
+    <a class="cover-site" href="https://www.mersanmutfak.com" target="_blank" rel="noopener">mersanmutfak.com</a>
+  </div>
+</template>
+</body>
+</html>
